@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+        <title>O autoru</title>
+        <link rel="icon" href="multimedija/ikona.png">
+        <meta name="author" content="Elena Pizek">
+        <meta name="keywords" content="FOI, WebDiP">
+        <meta name="description" content="07.03.2023">
+        <link href="css/epizek.css" rel="stylesheet" type="text/css">
+        <link href="css/epizek_prilagodbe.css" rel="stylesheet" type="text/css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+
+    <body id="tijelo">
+        <header>
+            <a id="logo" href="index.php">
+                <img src="multimedija/wow.png" alt="wow ikona" width="50"></a>
+            <form id="odaberiJ" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                <label for="jezik">Odaberi jezik stranice:</label>
+                <select id="jezik" name="jezik">
+                    <option value="HRV" selected="selected">Hrvatski jezik</option>
+                    <option value="ENG">Engleski jezik</option>
+                    <option value="GER">Njemački jezik</option>
+                </select>
+            </form>
+            <a id="menu" href="#pretrazivanje">
+                <img src="multimedija/search.jpeg" alt="menu ikona" width="50"></a>
+            <div id="pretrazivanje">
+                <a href="#"><img src="multimedija/close.png" alt="zatvori" width="25"></a>
+                <form id="formaU" name="formaU" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                    <label for="unos">Pojam: </label>
+                    <input id="unos" type="search" name="unos">
+                    <input type="submit" value="Pretraži">
+                </form>
+            </div>
+            <h1 id="pocetak">O autoru</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Početna stranica</a></li>
+            </ul> 
+        </nav>
+        <section id="sadrzaj">
+            <h1 class="tekst">Informacije o autoru</h1>
+            <section id="prvaSekcija">
+                <div class="motivacija">
+                    <h2>Motivacija</h2>
+                    <p>
+                        Od malena sam imala interes za tehnologiju i provodila dosta vremena na internetu. S vremenom me naravno počelo zanimati i što se krije u pozadini web stranica i aplikacija koje svkodnevno koristim. Smatram da je jako korisno poznavati web tehnologije jer u današnje vrijeme web je sveprisutan i njegovo korištenje svakim danom sve više i više raste. 
+                    </p>
+                </div>
+                <div class="podaci">
+                    <img class="osobna" src="multimedija/osobna.jpg" alt="osobna" width="300" height="400"/>
+                    <ul>
+                        <li>Ime: Elena</li>
+                        <li>Prezime: Pizek</li>
+                        <li>E-mail: <a href="mailto:epizek@foi.hr">epizek@foi.hr</a></li>
+                        <li>Iksica: 0016143461</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="drugaSekcija">
+                <div >
+                    <h2>Računalne vještine</h2>
+                    <ol style="overflow: scroll; width: 35%; height: 90px; border: thin inset;background: #15171e;">
+                        <li>C# - programski jezik koji radi na .NET Frameworku i koristi se za razvoj web aplikacija, mobilnih aplikacija i igara</li>
+                        <li>C++ - višeplatformski jezik koji se može koristiti za izradu aplikacija visokih performansi i video igara</li>
+                        <li>Python - programski jezik opće namjene, interpretiran i visoke razine, najviše se koristi za razvoj softvera i web stranica</li>
+                        <li>GitHub -moćan alat za suradnju i razvojna platforma za pregled i upravljanje kodovima </li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Područja interesa</h2>
+                    <ul>
+                        <li>Izrada video igara</li>
+                        <li>Borilačke vještine</li>
+                        <li>Izrada web i mobilnih aplikacija</li>
+                        <li>Uređivanje video materijala</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <address>Kontakt: <a href="mailto:epizek@foi.hr">Elena Pizek</a></address>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2022/zadaca_02/epizek/o_autoru.html">
+                <img src="multimedija/HTML5.png" alt="HTML5" width="50"/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2022/zadaca_02/epizek/o_autoru.html">
+                <img src="multimedija/CSS3.png" alt="CSS3" width="50">
+            </a>
+            <form id="odaberiP" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                <label for="privola">Prikupljanje podataka:</label>
+                <select id="privola" name="privola">
+                    <option value="Bez">Bez prikupljanja</option>
+                    <option value="Osnovno" selected="selected">Osnovno</option>
+                    <option value="Sve">Sve</option>
+                </select>
+            </form>
+            <p>&copy; 2023 E.Pizek</p>
+            <img src="multimedija/CC.png" alt="CC" width="50">
+        </footer>
+    </body>
+</html>

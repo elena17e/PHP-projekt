@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+        <title>Dokumentacija</title>
+        <link rel="icon" href="multimedija/ikona.png">
+        <meta name="author" content="Elena Pizek">
+        <meta name="keywords" content="WOW, ERA">
+        <meta name="description" content="07.03.2023">
+        <link href="css/epizek.css" rel="stylesheet" type="text/css"> 
+        <link href="css/epizek_prilagodbe.css" rel="stylesheet" type="text/css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+
+    <body id="tijelo">
+        <header>
+            <a id="logo" href="index.php">
+                <img src="multimedija/wow.png" alt="wow ikona"></a>
+            <form id="odaberiJ" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                <label for="jezik">Odaberi jezik stranice:</label>
+                <select id="jezik" name="jezik">
+                    <option value="HRV" selected="selected">Hrvatski jezik</option>
+                    <option value="ENG">Engleski jezik</option>
+                    <option value="GER">Njemački jezik</option>
+                </select>
+            </form>
+            <a id="menu" href="#pretrazivanje">
+                <img src="multimedija/search.jpeg" alt="menu ikona"></a>
+            <div id="pretrazivanje">
+                <a href="#"><img src="multimedija/close.png" alt="zatvori" width="25"></a>
+                <form id="formaU" name="formaU" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                    <label for="unos">Pojam: </label>
+                    <input id="unos" type="search" name="unos">
+                    <input type="submit" value="Pretraži">
+                </form>
+            </div>
+            <h1 id="pocetak">Dokumentacija</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Početna stranica</a></li>
+            </ul>
+        </nav>
+        <section id="sadrzaj">
+            <h1>Projektna Dokumentacija</h1>
+            <div id="opisZadatka">
+                    <h2>Opis projektnog zadatka</h2>
+                    <p>
+                        Projektni zadatak je bio implementirati sustav koji služi za upravljanje marketinškom kampanjom proizvoda. U sustavu postoje uloge neregistriranog korisnika, registriranog korisnika, moderatora i administratora kod kojih svaka uloga više razine ima sve ovlasti uloga niže razine. 
+                    </p>
+            </div>
+             <div id="opisRjesenja">
+                    <h2>Opis projektnog rješenja</h2>
+                    <p>
+                 Projektno rješenje implementirano pomoću tehnologija navedenih kasnije na ovoj stranici omogućuje neregistriranom korisniku pregled svih kampanja i svih korisnika koji imaju profil. Registrirani korisnik
+                ima mogučnost kreiranja i pregleda svog profila, pregleda otvorenih kampanji i cijena i opisa proizvoda u toj kampanji, pregleda svoji kupljenih proizvoda i kupnje proizvoda i može vidjeti stanje svojih bodova. Moderator može kreirati, pregledavati i ažurirati kampanju te pridružiti proizvode za koje
+je zadužen u kampanju, može pregledati proizvode u aktivnim kampanjama i definirati uvijete ze njih i može vidjeti statistiku kupljenih proizvoda po kampanji. Administrator ima mogučnost kreirati, pregledati i ažurirati proizvod i može vidjeti statistiku količine kupljenih proizvoda po moderatoru. 
+                    </p>
+            </div>
+            <div id="eraModel">
+            <h2 class="tekst">Era model</h2>
+            <a href="multimedija/era.png"><img id="ERA" src="multimedija/era.png" alt="ERA"/></a>
+            </div>
+             <div id="navigacijski">
+            <h2 class="tekst">Skripte, mapa mjesta, navigacijski dijagram</h2>
+            <a href="multimedija/navigacijski.png"><img id="Navigacijski" src="multimedija/navigacijski.png" alt="NAVIGACIJSKI" /></a>
+            </div>
+             <div id="tehnologije">
+                    <h2>Korištene tehnologije i alati</h2>
+                    <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Jquery</li>
+                     <li>MySql</li>
+                    <li>phpMyAdmin</li>
+                    <li>PHP</li>
+                    <li>Smarty</li>
+                </ul>
+            </div>
+             <div id="moduli">
+                    <h2>Vanjski moduli/biblioteke</h2>
+                    <ul>
+                     <li>PHPMailer - Korišten za slanje mailova</li>
+                    <li>Klasa baza.class.php korištena za povezivanje sa bazom podataka</li>
+                    <li>Klasa sesija.class.php korištena za kreiranje sesije</li>
+                    <li>Smarty biblioteka za predloške</li>
+                    <li>Generacija CAPTCH-e</li>
+                    </ul>
+            </div>
+        </section>
+        <footer>
+            <address>Kontakt: <a href="mailto:epizek@foi.hr">Elena Pizek</a></address>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2022/zadaca_02/epizek/era.html">
+                <img src="multimedija/HTML5.png" alt="HTML5"/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2022/zadaca_02/epizek/era.html">
+            <img src="multimedija/CSS3.png" alt="CSS3">
+            </a>
+            <form id="odaberiP" action="http://barka.foi.hr/WebDiP/2022/materijali/zadace/ispis_forme.php">
+                <label for="privola">Prikupljanje podataka:</label>
+                <select id="privola" name="privola">
+                    <option value="Bez">Bez prikupljanja</option>
+                    <option value="Osnovno" selected="selected">Osnovno</option>
+                    <option value="Sve">Sve</option>
+                </select>
+            </form>
+            <p>&copy; 2023 E.Pizek</p>
+            <img src="multimedija/CC.png" alt="CC">
+        </footer>
+    </body>
+</html>

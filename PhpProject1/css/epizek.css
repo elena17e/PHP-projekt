@@ -1,0 +1,569 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Mar 7, 2023, 2:46:53 PM
+    Author     : WebDiP_07
+*/
+/*implicitno
+*/
+
+body{
+    font-family: monospace;
+    margin: auto;
+    color: white;
+    background: #311E16;
+    width: 100%;
+}
+footer{
+    clear: both;
+    color: wheat;
+    background-color: #15171e;
+}
+header{
+    color: wheat;
+    background-color: #15171e;
+    display: flex;
+    flex-direction: row;
+}
+
+h1, footer {
+    text-align: center;
+    margin: 0;
+}
+
+h1, h2{
+    font-weight: bold;
+    color: #eebd2a;
+    font-family: "Georgia";
+}
+
+li {
+    color: #eebd2a;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    line-height: 1;
+}
+
+nav > ul li {
+    background: #15171e;
+    display: inline;
+    list-style-type: none;
+    position: relative;
+    float: left;
+    padding: 10px 7px;
+}
+
+nav > ul li a {
+    background: #15171e;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    color: #eebd2a;
+    text-transform: uppercase;
+}
+nav > ul li a:hover {
+    color: white;
+    background: #5b1d12;
+}
+/* eksplicitno */
+.tekst {
+    font-style: italic;
+}
+
+/* jednoznačno */
+#sadrzaj {
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+ul li a{
+    color: #009dff;
+}
+
+.osobna:hover{
+    width: 450px;
+    height: 600px;
+}
+
+#pretrazivanje{
+    display: none;
+}
+
+#pretrazivanje:target{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,60,80,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+table {
+    table-layout: auto;
+    margin-top: 100px;
+    border: 2px outset black;
+    padding: 1px;
+    font-family: 'Alumni Sans', sans-serif;
+    width: 95%;
+    margin-left: 40px;
+}
+
+th, td {
+    border: thin inset black;
+    margin: 1px;
+
+}
+
+#logo{
+    order:0;
+}
+
+#pocetak{
+    order:1;
+    flex-grow: 2;
+    text-align:left;
+    padding: 6px;
+}
+
+#odaberiJ{
+    order:2;
+}
+#menu{
+    order:3;
+}
+
+.tekst {
+    font-style: italic;
+}
+
+
+
+form#formaR {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+}
+
+form#formaP {
+    border: 10px;
+    margin: 8px;
+    padding: 8px;
+    border-style: dashed;
+    border-width: 3px;
+    color: white;
+    background: #5b1d12;
+}
+
+#formaR{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    max-width: 100%;
+}
+#imeprezime1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#imeprezime{
+    grid-column: 1;
+    grid-row: 2;
+}
+#imeprezimeGreske{
+    grid-column: 1;
+    grid-row: 3;
+}
+#email1{
+    grid-column: 2;
+    grid-row: 1;
+}
+#email{
+    grid-column: 2;
+    grid-row: 2;
+}
+#emailGreske{
+    grid-column: 2;
+    grid-row: 3;
+}
+#korime1{
+    grid-column: 2;
+    grid-row: 4;
+}
+#korime{
+    grid-column: 2;
+    grid-row: 5;
+}
+#korimeGreske{
+    grid-column: 2;
+    grid-row: 6;
+}
+#lozinka11{
+    grid-column: 1;
+    grid-row: 7;
+}
+#lozinka1{
+    grid-column: 1;
+    grid-row: 8;
+}
+#lozinka1Greske{
+    grid-column: 1;
+    grid-row: 9;
+}
+#lozinka22{
+    grid-column: 2;
+    grid-row: 7;
+}
+#lozinka2{
+    grid-column: 2;
+    grid-row: 8;
+}
+#lozinka2Greske{
+    grid-column: 2;
+    grid-row: 9;
+}
+.g-recaptcha{
+    grid-column: 1;
+    grid-row: 4;
+}
+#CAPTCHAgreske{
+    grid-column: 1;
+    grid-row: 5;
+}
+#registrirajMe{
+    margin-top: 30px;
+    grid-column: 1 / span 2;
+    grid-row: 11;
+}
+
+#formaP{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    max-width: 100%;
+
+}
+
+#korime22{
+    grid-column: 1;
+    grid-row: 1;
+}
+#korime2{
+    grid-column: 2;
+    grid-row: 1;
+}
+#lozinka33{
+    grid-column: 1;
+    grid-row: 2;
+}
+#lozinka3{
+    grid-column: 2;
+    grid-row: 2;
+}
+#zapamtiMe{
+    grid-column: 1;
+    grid-row: 3;
+}
+#prijaviMe{
+    margin-top: 30px;
+    grid-column: 1/ span 2;
+    grid-row: 4;
+}
+#zaboravljena{
+    margin-top: 30px;
+    grid-column: 1/ span 2;
+    grid-row: 5;
+    text-align: center;
+}
+
+
+img[alt="menu ikona"],img[alt="wow ikona"],img[alt="HTML5"],img[alt="CSS3"],img[alt="CC"]{
+    width: 50px;
+    height: 50px;
+}
+
+#ERA{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 600px;
+}
+
+#Navigacijski{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 600px;
+}
+
+
+#lozinka2Greske, #lozinka1Greske, #emailGreske, #imeprezimeGreske, #korimeGreske, #CAPTCHAgreske{
+    color: white;
+}
+
+#formaLozinka{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 310px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+}
+
+#formaProfil{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+}
+
+
+#Profildiv{
+    margin-bottom: 220px;
+}
+
+.dropdown {
+    float: left;
+    background: #15171e;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    color: #eebd2a;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 35px;
+
+}
+
+.dropdown-content li a {
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background: #5b1d12;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.Osobnipodaci{
+    align-items: center;
+    text-align: center;
+
+}
+
+#formaCijena{
+    align-items: center;
+    text-align: center;
+
+}
+#formaBodovi{
+    align-items: center;
+    text-align: center;
+
+}
+
+#formaKampanja {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+
+#formaKampanjaPridruzi {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+#formaUvijeti {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+#formaKreirajP {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+#formaDodijeliM {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+#formaBlokiraj {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+
+}
+.square1 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(51, 127.5, 204);
+}
+.square2 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(127.5, 204, 51);
+}
+.square3 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(204, 51, 178.5);
+}
+.square4 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(51,178.5, 153);
+}
+.square5 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(178.5, 153, 229.5);
+}
+.square6 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(153, 229.5, 204);
+}
+.square7 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(229.5, 204, 76.5);
+}
+
+
+a:link{
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.pagination {
+    
+    list-style-type: none;
+    padding: 10px 0;
+    display: inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.pagination li {
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.pagination li a {
+    box-sizing: border-box;
+    background-color: #e2e6e6;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #616872;
+    border-radius: 4px;
+}
+.pagination li a:hover {
+    background-color: #d4dada;
+}
+.pagination .next a, .pagination .prev a {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.pagination .currentpage a {
+    background-color: #518acb;
+    color: #fff;
+}
+.pagination .currentpage a:hover {
+    background-color: #518acb;
+}
+#pokazi_uvijete{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+}
+
+#odaberiRadnju, #formadodijeli, #formaodaberi, #formazuriraj{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    color: #eebd2a;
+}
